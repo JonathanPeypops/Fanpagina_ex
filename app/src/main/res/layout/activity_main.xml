@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/silver"/>
+
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/radio_nl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/language_nl" />
+
+        <RadioButton
+            android:id="@+id/radio_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/language_en"
+            />
+
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/activity_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="JUST DO IT !"
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:id="@+id/titleView"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/justdoit" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="NOTHING IS IMPOSSIBLE"
+                android:textColor="@color/silver"
+                android:textSize="50dp"
+                android:id="@+id/textView"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/picasso"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

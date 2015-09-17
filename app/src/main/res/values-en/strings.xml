@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language_nl">Dutch</string>
+    <string name="language_en">English</string>
+
+    <string name="title">JUST DO IT</string>
+    <string name="text">NOTHING IS IMPOSSIBLE</string>
+</resources>
